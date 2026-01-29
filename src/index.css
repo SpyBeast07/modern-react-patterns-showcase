@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* global.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:not(dialog) {
+  margin: 0;
+}
+/* ... other modern reset rules */
