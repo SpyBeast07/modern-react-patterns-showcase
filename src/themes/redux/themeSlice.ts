@@ -10,7 +10,7 @@ const initialState: ThemeState = {
     value: 'light',
 };
 
-export const themeSlice = createSlice({
+const themeSlice = createSlice({
     name: 'theme',
     initialState,
     reducers: {

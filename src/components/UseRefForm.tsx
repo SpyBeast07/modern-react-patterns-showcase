@@ -76,8 +76,9 @@ export const UseRefForm = () => {
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 flex flex-col gap-6">
             <h2 className="text-xl font-bold text-gray-800 border-b border-gray-100 pb-2">UseRef Form</h2>
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <label htmlFor="name-input" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input
+                    id="name-input"
                     type="text"
                     ref={nameRef}
                     className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all bg-gray-50 hover:bg-white text-gray-900 ${
@@ -89,8 +90,9 @@ export const UseRefForm = () => {
                 {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
             </div>
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <label htmlFor="email-input" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <input
+                    id="email-input"
                     type="email"
                     ref={emailRef}
                     className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all bg-gray-50 hover:bg-white text-gray-900 ${
@@ -102,8 +104,9 @@ export const UseRefForm = () => {
                 {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
             </div>
             <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                <label htmlFor="password-input" className="block text-sm font-medium text-gray-700 mb-1">Password</label>
                 <input
+                    id="password-input"
                     type="password"
                     ref={passwordRef}
                     className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all bg-gray-50 hover:bg-white text-gray-900 ${

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Define Post type
-export type Post = {
+type Post = {
     id: number;
     title: string;
     body: string;
